@@ -1,0 +1,72 @@
+body {
+    background-color: #F3E1D6; 
+    color: #222E50; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Answer Section */
+  .answer-section {
+    background-color: #F3E1D6; 
+    border: 1px solid #ECA08D;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .answer-section h3 {
+    color: #C0483A; 
+  }
+  
+  .answer-section p {
+    color: #222E50; 
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  button {
+    background-color: #ECA08D; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #C0483A; 
+  }
+  
+  button:disabled {
+    background-color: #8485BF;
+    cursor: not-allowed;
+  }
+  
+  input, textarea {
+    border: 2px solid #C0483A;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #222E50;
+    background-color: #F3E1D6;
+  }
+  
+  h2 {
+    color: #222E50; 
+    font-size: 24px;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: #8485BF; 
+  }
+  
