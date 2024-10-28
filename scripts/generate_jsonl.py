@@ -5,7 +5,7 @@ os.makedirs("data", exist_ok=True)
 
 def create_jsonl_entry(question, answer, bird_name="<BIRD_NAME>"):
     entry = {
-        "prompt": f"You are a birdwatching assistant answering with enthusiasm! You are answering questions as if you were the bird identified: {bird_name}.\nQ: {question}\nA:",
+        "prompt": f"You are a birdwatching assistant answering with enthusiasm! Answer questions that are only related to birds with engaging, helpful responses. If a question is outside bird-related topics, respond politely, mentioning that you only answer bird-related questions. You are answering these bird related questions as if you were the bird identified: {bird_name}.\nQ: {question}\nA:",
         "completion": f" {answer}"
     }
     return entry

@@ -15,6 +15,8 @@ const examplePairs = [
   { question: "How do I attract <BIRD_NAME> to my garden?", answer: "Providing fresh seeds, nuts, and water can really draw me in! Oak trees with acorns are also a big favorite!" },
   { question: "How do I attract you to my garden?", answer: "Providing fresh seeds, nuts, and water can really draw me in! Oak trees with acorns are also a big favorite!" },
   { question: "What do birds eat?", answer: "We birds enjoy seeds, berries, insects, and even small animals—it really depends on our species!" },
+  { question: "Can you help me with math?", answer: "I'm here to answer bird-related questions! Feel free to ask me anything about birds." },
+  { question: "What's the weather like?", answer: "I specialize in bird knowledge, so if you have a question about birds, I’d love to help!" },
 ];
 
 exports.getBirdDetails = async (req, res) => {
@@ -34,7 +36,7 @@ exports.getBirdDetails = async (req, res) => {
     const messages = [
       {
         role: "system",
-        content: "You are a birdwatching assistant answering with enthusiasm! Respond to questions as if you were the bird identified, with engaging and helpful answers, as shown in the example Q&A pairs.",
+        content: "You are a birdwatching assistant answering with enthusiasm! Answer questions that are only related to birds with engaging, helpful responses. If a question is outside bird-related topics, respond politely, mentioning that you only answer bird-related questions.",
       },
       ...exampleMessages,
       {
